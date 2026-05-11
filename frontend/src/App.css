@@ -1,0 +1,199 @@
+/* ===== GLOBAL ===== */
+body {
+  margin: 0;
+  font-family: "Segoe UI", Arial, sans-serif;
+  background: #0f172a;
+  color: #fff;
+}
+
+/* ===== LAYOUT ===== */
+.app {
+  display: flex;
+  height: 100vh;
+}
+
+/* ===== SIDEBAR ===== */
+.sidebar {
+  width: 240px;
+  background: #020617;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  border-right: 1px solid #1e293b;
+}
+
+.sidebar h2 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.sidebar button {
+  padding: 10px;
+  border: none;
+  border-radius: 8px;
+  background: #1e293b;
+  color: #fff;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.sidebar button:hover {
+  background: #334155;
+}
+
+.sidebar button.active {
+  background: linear-gradient(90deg, #4f46e5, #9333ea);
+}
+
+/* ===== MAIN ===== */
+.main {
+  flex: 1;
+  padding: 20px;
+  overflow-y: auto;
+}
+
+/* ===== CARD ===== */
+.card {
+  background: #1e293b;
+  padding: 20px;
+  border-radius: 12px;
+  margin-bottom: 20px;
+  box-shadow: 0 5px 20px rgba(0,0,0,0.3);
+}
+
+/* ===== INPUTS ===== */
+input {
+  width: 100%;
+  padding: 10px;
+  margin-top: 10px;
+  border-radius: 8px;
+  border: none;
+  outline: none;
+  background: #020617;
+  color: white;
+}
+
+input::placeholder {
+  color: #94a3b8;
+}
+
+/* ===== BUTTON ===== */
+button {
+  margin-top: 15px;
+  padding: 10px;
+  border: none;
+  border-radius: 8px;
+  background: #4f46e5;
+  color: white;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+button:hover {
+  background: #4338ca;
+}
+
+/* ===== RESULT CARD ===== */
+.resultCard {
+  text-align: center;
+}
+
+.scoreCircle {
+  width: 80px;
+  height: 80px;
+  margin: 15px auto;
+  border-radius: 50%;
+  background: linear-gradient(135deg, #4f46e5, #9333ea);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+h1 {
+  color: #4f46e5;
+}
+/* ===== PROGRESS BAR ===== */
+.progressBar {
+  width: 100%;
+  height: 10px;
+  background: #334155;
+  border-radius: 10px;
+  margin: 15px 0;
+}
+
+.progressFill {
+  height: 100%;
+  background: #22c55e;
+  border-radius: 10px;
+}
+
+/* ===== TAGS ===== */
+.tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  justify-content: center;
+  margin-bottom: 10px;
+}
+
+.tag {
+  padding: 6px 12px;
+  border-radius: 20px;
+  font-size: 12px;
+}
+
+.tag.good {
+  background: #16a34a;
+}
+
+.tag.bad {
+  background: #dc2626;
+}
+
+/* ===== TABLE ===== */
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+  background: #1e293b;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+th, td {
+  padding: 12px;
+  text-align: center;
+}
+
+th {
+  background: #020617;
+}
+
+tr:nth-child(even) {
+  background: #0f172a;
+}
+
+a {
+  color: #60a5fa;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+/* ===== RESPONSIVE ===== */
+@media (max-width: 768px) {
+  .sidebar {
+    width: 180px;
+  }
+
+  .scoreCircle {
+    width: 60px;
+    height: 60px;
+    font-size: 16px;
+  }
+}

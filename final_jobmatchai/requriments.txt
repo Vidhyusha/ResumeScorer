@@ -1,0 +1,8 @@
+
+
+streamlit
+pandas
+langchain
+langchain-groq
+tavily-python
+python-dotenv
